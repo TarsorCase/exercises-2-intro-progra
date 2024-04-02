@@ -91,14 +91,13 @@ int exercise_6(int n) {
     int num1 = stoi(one);
     int num2 = stoi(two);
     int result = num1 + num2;
-    cout << result;
-  return 0;
+  return result;
 }
 
 void exercise_7(int n) {
   double suma = 0.0;
   for (int i = 1; i <= n; i++) {
-      suma += (i % 2 == 01) ? -1.0 / i : 1.0 / i;
+      suma += (i % 2 == 0) ? -1.0 / i : 1.0 / i;
     }
     std::cout << suma << "\n";
 }
