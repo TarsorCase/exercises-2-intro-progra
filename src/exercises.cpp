@@ -1,11 +1,24 @@
 
 #include <cmath>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 void exercise_1(string s1) {
-  // TODO: YOUR CODE HERE
+   
+    int space = 0;
+    for (char character : s1){
+        if ( character == ' '){
+            cout << space << "\n";
+        }else {
+    
+        }
+        space ++;
+    }
+    int length = s1.length();
+    cout << length;
+    return 0;
 }
 
 void exercise_2(string s1) {
