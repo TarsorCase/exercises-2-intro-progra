@@ -22,7 +22,24 @@ void exercise_1(string s1) {
 }
 
 void exercise_2(string s1) {
-  // TODO: YOUR CODE HERE
+  int space = 0;
+    while (space < s1.length()) {
+        // Skip leading spaces
+        while (space < s1.length() && s1[space] == ' ') {
+            space++;
+        }
+        
+        int end = space;
+        while (end < s1.length() && s1[end] != ' ') {
+            end++;
+        }
+        
+        cout << "[" << s1.substr(space, end - space) << "]" << endl;
+
+        space = end + 1;
+    }
+
+    return 0;
 }
 
 void exercise_3(string s1) {
