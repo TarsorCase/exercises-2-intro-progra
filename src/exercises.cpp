@@ -11,7 +11,6 @@ void exercise_1(string s1) {
     for (char character : s1){
         if ( character == ' '){
             cout << space << "\n"; 
-            return 0;
         }else {
     
         }
@@ -19,7 +18,6 @@ void exercise_1(string s1) {
     }
     int length = s1.length();
     cout << length;
-    return 0;
 }
 
 void exercise_2(string s1) {
@@ -39,8 +37,6 @@ void exercise_2(string s1) {
 
         space = end + 1;
     }
-
-    return 0;
 }
 
 void exercise_3(string s1) {
