@@ -56,19 +56,14 @@ void exercise_3(string s1) {
 }
 
 void exercise_4(int n) {
-  int multiplicador(int num){
-    int valor;
-    if(num > 0){
-        int i = num - 1;
-        for(valor = num; i > 0; --i){
-            valor *= i;
+  int valor;
+  if(n > 0){
+    int i = n - 1;
+    for(valor = n; i > 0; --i){
+        valor *= i;
         }
     }
-    return valor;
-}
-
-int resultado() {
-    int answer = multiplicador(n);
+    int answer = valor;
     cout << answer;
 }
 
