@@ -41,7 +41,7 @@ void exercise_2(string s1) {
 
 void exercise_3(string s1) {
   int size = s1.size();
-  if(size < 20){
+  if(size <= 20){
         for(char num : s1){
             if(num == '1'){
                 cout << "Om-nom-nom :P\n";
