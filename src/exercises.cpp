@@ -54,7 +54,7 @@ void exercise_3(string s1) {
             }
         }
     }else{
-      for(int i = 0; i < 11; ++i){
+      for(int i = 0; i < 10; ++i){
         cout << "Om-nom-nom :P\n";
       }
     }
