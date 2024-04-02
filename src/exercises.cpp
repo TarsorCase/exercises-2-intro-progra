@@ -17,7 +17,7 @@ void exercise_1(string s1) {
         space ++;
     }
     int length = s1.length();
-    cout << length;
+    cout << length << "\n";
 }
 
 void exercise_2(string s1) {
