@@ -10,15 +10,14 @@ void exercise_1(string s1) {
     int space = 0;
     for (char character : s1){
         if ( character == ' '){
-            cout << space << "\n";
+            return space;
         }else {
     
         }
         space ++;
     }
     int length = s1.length();
-    cout << length;
-    return 0;
+    return length;
 }
 
 void exercise_2(string s1) {
