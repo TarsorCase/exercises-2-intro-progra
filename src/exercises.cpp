@@ -56,7 +56,22 @@ void exercise_3(string s1) {
 }
 
 void exercise_4(int n) {
-  // TODO: YOUR CODE HERE
+  int multiplicador(int num){
+    int valor;
+    if(num > 0){
+        int i = num - 1;
+        for(valor = num; i > 0; --i){
+            valor *= i;
+        }
+    }
+    return valor;
+}
+
+int resultado() {
+    int numero;
+    cin >> numero;
+    int answer = multiplicador(numero);
+    cout << answer;
 }
 
 void exercise_5(int n, int k) {
