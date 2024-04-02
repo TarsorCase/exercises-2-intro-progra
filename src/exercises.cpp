@@ -85,12 +85,22 @@ void exercise_5(int n, int k) {
 }
 
 int exercise_6(int n) {
-  // TODO: YOUR CODE HERE
+  string number = to_string(n);
+    string one = number.substr(0,1);
+    string two = number.substr(1,1);
+    int num1 = stoi(one);
+    int num2 = stoi(two);
+    int result = num1 + num2;
+    cout << result;
   return 0;
 }
 
 void exercise_7(int n) {
-  // TODO: YOUR CODE HERE
+  double suma = 0.0;
+  for (int i = 1; i <= n; i++) {
+      suma += (i % 2 == 01) ? -1.0 / i : 1.0 / i;
+    }
+    std::cout << suma << "\n";
 }
 
 void exercise_8(string s) {
