@@ -68,9 +68,7 @@ void exercise_4(int n) {
 }
 
 int resultado() {
-    int numero;
-    cin >> numero;
-    int answer = multiplicador(numero);
+    int answer = multiplicador(n);
     cout << answer;
 }
 
