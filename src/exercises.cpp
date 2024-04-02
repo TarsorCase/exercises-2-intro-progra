@@ -40,7 +40,18 @@ void exercise_2(string s1) {
 }
 
 void exercise_3(string s1) {
-  // TODO: YOUR CODE HERE
+  if(size < 20){
+        for(char num : pastel){
+            if(num == '1'){
+                cout << "Om-nom-nom :P\n";
+            }else if(num == '0'){
+                cout << "No cake :(\n";
+                break;
+            }else {
+            
+            }
+        }
+    }
 }
 
 void exercise_4(int n) {
