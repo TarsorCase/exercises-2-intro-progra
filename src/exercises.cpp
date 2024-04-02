@@ -68,7 +68,15 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-  // TODO: YOUR CODE HERE
+    int n;
+    int k;
+    vector<int> week;
+    week.resize(13);
+    
+    cin >> n;
+    cin >> k;
+    int string_length = week.size();
+    cout << string_length;
 }
 
 int exercise_6(int n) {
