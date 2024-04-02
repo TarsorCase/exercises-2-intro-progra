@@ -68,8 +68,6 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-    int n;
-    int k;
     vector<int> week;
     week.resize(13);
     
