@@ -42,7 +42,7 @@ void exercise_2(string s1) {
 
 void exercise_3(string s1) {
   int size = s1.size();
-  if(size <= 20){
+  if(size < 20){
         for(char num : s1){
             if(num == '1'){
                 cout << "Om-nom-nom :P\n";
@@ -53,6 +53,10 @@ void exercise_3(string s1) {
             
             }
         }
+    }else{
+      for(int i = 0; i < 11; ++i){
+        cout << "Om-nom-nom :P\n";
+      }
     }
 }
 
@@ -65,7 +69,7 @@ void exercise_4(int n) {
         }
     }
     int answer = valor;
-    cout << answer;
+    cout << answer << "\n";
 }
 
 void exercise_5(int n, int k) {
