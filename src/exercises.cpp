@@ -62,7 +62,7 @@ void exercise_3(string s1) {
 
 void exercise_4(int n) {
   int valor;
-  if(n > 0){
+  if(n >= 0){
     if(n <= 14){
       int i = n - 1;
       for(valor = n; i > 0; --i){
@@ -71,7 +71,7 @@ void exercise_4(int n) {
       int answer = valor;
       cout << answer << "\n";
     }else{
-      cout << "El numero es muy grande. Intentelo de nuevo";  
+      cout << "El numero es muy grande. Intentelo de nuevo\n";  
     }
   }else{
     cout << "El numero es negativo. Intentelo de nuevo\n";
