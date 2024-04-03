@@ -72,7 +72,7 @@ void exercise_4(int n) {
       int answer = valor;
       cout << answer << "\n";
       }else{
-        cout << 1;
+        cout << 1 << "\n";
       }
     }else{
       cout << "El numero es muy grande. Intentelo de nuevo\n";  
