@@ -64,12 +64,16 @@ void exercise_4(int n) {
   int valor;
   if(n >= 0){
     if(n <= 14){
+      if(n != 0){
       int i = n - 1;
       for(valor = n; i > 0; --i){
         valor *= i;
         }
       int answer = valor;
       cout << answer << "\n";
+      }else{
+        cout << 1;
+      }
     }else{
       cout << "El numero es muy grande. Intentelo de nuevo\n";  
     }
