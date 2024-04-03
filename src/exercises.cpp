@@ -67,11 +67,11 @@ void exercise_4(int n) {
     for(valor = n; i > 0; --i){
         valor *= i;
         }
+  int answer = valor;
+  cout << answer << "\n";
   }else{
     cout << "El numero es negativo. Intentelo de nuevo\n";
   }
-    int answer = valor;
-    cout << answer << "\n";
 }
 
 void exercise_5(int n, int k) {
