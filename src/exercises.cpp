@@ -150,30 +150,101 @@ void exercise_8(string s) {
 }
 
 void exercise_9(string s) {
-  // TODO: YOUR CODE HERE
+   int f = 0;
+    int result = 0;
+    int size = s.length();
+    
+    for(char c : s){
+        if(c == 'f'){
+              ++f;
+        }
+    }
+    
+    
+    if(f == 0){
+        cout << "-2";
+    }else if(f == 1){
+        cout << "-1";
+    }else{
+        for(char c : s){
+            ++result;
+            if(c == 'f'){
+                cout << result;
+                break;
+            }
+        }
+    }
 }
 
 int exercise_10(int a, int b) {
-  // TODO: YOUR CODE HERE
-  return 0;
+   for(int i = 2; i <= 13; ++i){
+        while(a % i == 0 && b % i == 0){
+            x *= i;
+            a = a/ i;
+            b = b/ i;
+        }
+    }
+  return x;
 }
 
-void exercise_11() {
-  // TODO: YOUR CODE HERE
+void exercise_11(int n) {
+  float result = 1; 
+    for(int i = n; i <= 10; ++i){
+        result /= i + 1;
+        cout << result << "\n";
+    }
 }
 
-void exercise_12() {
-  // TODO: YOUR CODE HERE
+void exercise_12(int n) {
+  float result = 1;
+    float v = 1;
+    for(int i = 0; i <= n; ++i){
+        result /= i + 1;
+        cout << result << "\n";
+        v += result;
+    }
+    float answer = n * v;
+    cout << answer << "\n";
 }
 
 long exercise_13(int n, int k) {
-  // TODO: YOUR CODE HERE
-  return 0;
+    int result = 0;
+    
+    for(int i = 1; i <= n; ++i){
+        int power = pow(i, k);
+        result += power;
+    }
+    
+    return result;
 }
 
 string exercise_14(int n) {
-  // TODO: YOUR CODE HERE
-  return "";
+   string sentence = tostring(n);
+    
+    int size = sentence.length();
+    string original = "";
+    string reversed = "";
+    if(size <= 100){
+        for(char c : sentence){
+            if(c != ' '){
+                original += c;
+            }
+        }
+        for(int i = original.length() - 1; i >= 0; --i){
+            reversed += original[i];
+        }
+        for(int i = 0; i <= size - 1; ++i){
+            char o = original[i];
+            char r = reversed[i];
+            if( o != r){
+                return "NO\n";
+            }else{
+                return "YES\n";
+            }
+        }
+    }else{
+        return "Se supero la cantidad de caracteres permitidos la cual es 100";
+    }
 }
 
 void exercise_15(int decimal) {
