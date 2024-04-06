@@ -162,14 +162,14 @@ void exercise_9(string s) {
     
     
     if(f == 0){
-        cout << "-2";
+        cout << "-2\n";
     }else if(f == 1){
-        cout << "-1";
+        cout << "-1\n";
     }else{
         for(char c : s){
             ++result;
             if(c == 'f'){
-                cout << result;
+                cout << result << "\n";
                 break;
             }
         }
