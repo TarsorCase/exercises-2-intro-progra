@@ -194,7 +194,7 @@ int exercise_10(int a, int b) {
   return x;
 }
 
-void exercise_11() {
+void exercise_11(int n) {
   float result = 1; 
     for(int i = n; i <= 10; ++i){
         result /= i + 1;
@@ -202,7 +202,7 @@ void exercise_11() {
     }
 }
 
-void exercise_12() {
+void exercise_12(int n) {
   float result = 1;
     float v = 1;
     for(int i = 0; i <= n; ++i){
