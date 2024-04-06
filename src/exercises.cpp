@@ -90,13 +90,17 @@ void exercise_5(int n, int k) {
 }
 
 int exercise_6(int n) {
-    string number = to_string(n);
-    int result = 0;
-
-    for (char c : number) {
+    if(n >= 0){
+      string number = to_string(n);
+      int result = 0;
+      for (char c : number) {
         result += c - '0';
+      }else{
+        result = 0;
+        return result;
+      }
+      return result;
     }
-  return result;
 }
 
 void exercise_7(int n) {
