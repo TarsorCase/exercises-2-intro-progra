@@ -90,10 +90,11 @@ int exercise_6(int n) {
   string number = to_string(n);
     string one = number.substr(0,1);
     string two = number.substr(1,1);
-    string tree = number.substr(1,2);
+    string tree = number.substr(2,2);
     int num1 = stoi(one);
     int num2 = stoi(two);
-    int result = num1 + num2;
+    int num3 = stoi(tree);
+    int result = num1 + num2 + num3;
   return result;
 }
 
