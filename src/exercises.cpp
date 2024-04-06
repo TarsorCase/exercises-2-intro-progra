@@ -83,10 +83,17 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-    vector<int> week;
-    week.resize(13);
-    int string_length = week.size();
-    cout << string_length;    
+    for(int i = 1; i < n; i++){
+        cout << "   ";
+    }
+    
+    for(int day = 1; day <= k; day++){
+        cout << (day < 10 ? " " : "") << day << " ";
+        
+        if((n + day -1) % 7 == 0 || day == k){
+            cout << "\n";
+        }
+    } 
 }
 
 int exercise_6(int n) {
