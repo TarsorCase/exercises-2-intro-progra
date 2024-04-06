@@ -248,11 +248,23 @@ string exercise_14(int n) {
 }
 
 void exercise_15(int decimal) {
-  // TODO: YOUR CODE HERE
+  string r;
+    while(decimal!=0){
+        r = (decimal%2==0 ?"0":"1")+r; 
+        decimal/=2;
+    }
+    cout << r;
 }
 
 void exercise_16(int divident, int divider) {
-  // TODO: YOUR CODE HERE
+  int cociente;
+  do{
+        ++cociente; 
+        divident -= divider;
+    }while(divident >= divider);
+
+    cout << cociente << ' ';
+    cout << devident;
 }
 
 void exercise_17(int n) {
