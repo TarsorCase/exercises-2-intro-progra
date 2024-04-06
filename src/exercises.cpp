@@ -84,14 +84,14 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
     for(int i = 0; i < n; i++){
-        cout << "  ";
+        cout << "   ";
     }
     
     for(int day = 1; day <= k; day++){
         if((n + day - 1) % 7 == 0 || day == k){
             if (day < 10)
                 cout << " ";
-            cout << day << "\n";
+            cout << day << endl;
         } else {
             if (day < 10)
                 cout << " ";
