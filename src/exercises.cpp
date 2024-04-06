@@ -195,6 +195,7 @@ int exercise_10(int a, int b) {
 }
 
 void exercise_11() {
+  int n = 10;
   float result = 1; 
     for(int i = n; i <= 10; ++i){
         result /= i + 1;
