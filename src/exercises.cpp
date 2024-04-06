@@ -83,19 +83,14 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-    vector<int> week;
-    week.resize(13);
     
-    cin >> n;
-    cin >> k;
-    int string_length = week.size();
-    cout << string_length;
 }
 
 int exercise_6(int n) {
   string number = to_string(n);
     string one = number.substr(0,1);
     string two = number.substr(1,1);
+    string tree = number.substr(1,2);
     int num1 = stoi(one);
     int num2 = stoi(two);
     int result = num1 + num2;
@@ -111,7 +106,30 @@ void exercise_7(int n) {
 }
 
 void exercise_8(string s) {
-  // TODO: YOUR CODE HERE
+  int size = s.length();
+    string original = "";
+    string reversed = "";
+    if(size <= 100){
+        for(char c : s){
+            if(c != ' '){
+                original += c;
+            }
+        }
+        for(int i = original.length() - 1; i >= 0; --i){
+            reversed += original[i];
+        }
+        for(int i = 0; i <= size - 1; ++i){
+            char o = original[i];
+            char r = reversed[i];
+            if( o != r){
+                cout << "NO\n";
+            }else{
+                cout << "YES\n";
+            }
+        }
+    }else{
+        cout << "Se supero la cantidad de caracteres permitidos la cual es 100\n";
+    }
 }
 
 void exercise_9(string s) {
