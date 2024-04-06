@@ -88,10 +88,14 @@ void exercise_5(int n, int k) {
     }
     
     for(int day = 1; day <= k; day++){
-        if((n + day -1) % 7 == 0 || day == k){
+        if((n + day - 1) % 7 == 0 || day == k){
+            if (day < 10)
+                cout << " ";
             cout << day << "\n";
-        }else{
-          cout << (day < 10 ? " " : "") << day << " ";
+        } else {
+            if (day < 10)
+                cout << " ";
+            cout << day << " ";
         }
     } 
 }
