@@ -83,18 +83,19 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-    
+    vector<int> week;
+    week.resize(13);
+    int string_length = week.size();
+    cout << string_length;    
 }
 
 int exercise_6(int n) {
-  string number = to_string(n);
-    string one = number.substr(0,1);
-    string two = number.substr(1,1);
-    string tree = number.substr(2,2);
-    int num1 = stoi(one);
-    int num2 = stoi(two);
-    int num3 = stoi(tree);
-    int result = num1 + num2 + num3;
+    string number = to_string(n);
+    int result = 0;
+
+    for (char c : number) {
+        result += c - '0';
+    }
   return result;
 }
 
