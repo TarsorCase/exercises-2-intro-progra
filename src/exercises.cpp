@@ -220,7 +220,7 @@ long exercise_13(int n, int k) {
 }
 
 string exercise_14(int n) {
-   string sentence = tostring(n);
+   string sentence = to_string(n);
     
     int size = sentence.length();
     string original = "";
@@ -244,7 +244,7 @@ string exercise_14(int n) {
             }
         }
     }else{
-        return "Se supero la cantidad de caracteres permitidos la cual es 100";
+        return "Se supero la cantidad de caracteres permitidos la cual es 100\n";
     }
 }
 
@@ -265,7 +265,7 @@ void exercise_16(int divident, int divider) {
     }while(divident >= divider);
 
     cout << cociente << ' ';
-    cout << devident;
+    cout << divident;
 }
 
 void exercise_17(int n) {
