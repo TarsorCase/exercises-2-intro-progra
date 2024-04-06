@@ -127,29 +127,33 @@ void exercise_8(string s) {
     string original = "";
     string reversed = "";
     if(size <= 100){
-        for(char c : s){
-            if(c != ' '){
-                original += c;
-            }
+      if(s != ""){
+          for(char c : s){
+              if(c != ' '){
+                 original += c;
+              }
+         }
+         for(int i = original.length() - 1; i >= 0; --i){
+             reversed += original[i];
+         }
+          for(int i = 0; i <= size - 1; ++i){
+             char o = original[i];
+              char r = reversed[i];
+             if( o != r){
+                  cout << "NO\n";
+                  break;
+              }else{
+                  cout << "YES\n";
+                  break;
+              }
+          }
+        }else{
+            cout << "YES\n";
         }
-        for(int i = original.length() - 1; i >= 0; --i){
-            reversed += original[i];
-        }
-        for(int i = 0; i <= size - 1; ++i){
-            char o = original[i];
-            char r = reversed[i];
-            if( o != r){
-                cout << "NO\n";
-                break;
-            }else{
-                cout << "YES\n";
-                break;
-            }
-        }
-    }else{
-        cout << "Se supero la cantidad de caracteres permitidos la cual es 100\n";
-    }
-}
+      }else{
+          cout << "Se supero la cantidad de caracteres permitidos la cual es 100\n";
+      }
+  }
 
 void exercise_9(string s) {
    int f = 0;
