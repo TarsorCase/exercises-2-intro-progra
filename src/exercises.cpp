@@ -140,8 +140,10 @@ void exercise_8(string s) {
             char r = reversed[i];
             if( o != r){
                 cout << "NO\n";
+                break;
             }else{
                 cout << "YES\n";
+                break;
             }
         }
     }else{
@@ -238,13 +240,13 @@ string exercise_14(int n) {
             char o = original[i];
             char r = reversed[i];
             if( o != r){
-                return "NO\n";
+                cout << "NO\n";
             }else{
-                return "YES\n";
+                cout << "YES\n";
             }
         }
     }else{
-        return "Se supero la cantidad de caracteres permitidos la cual es 100\n";
+        cout << "Se supero la cantidad de caracteres permitidos la cual es 100\n";
     }
 }
 
