@@ -252,6 +252,7 @@ string exercise_14(int n) {
     }else{
         cout << "Se supero la cantidad de caracteres permitidos la cual es 100\n";
     }
+    return 0;
 }
 
 void exercise_15(int decimal) {
