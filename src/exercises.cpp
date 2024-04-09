@@ -258,16 +258,7 @@ void exercise_15(int decimal) {
 }
 
 void exercise_16(int divident, int divider) {
-  int cociente;
-  do{
-        ++cociente; 
-        divident -= divider;
-    }while(divident >= divider);
-
-    cout << cociente << ' ';
-    cout << divident;
-}
-
+  
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
 }
