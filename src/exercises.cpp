@@ -199,13 +199,14 @@ void exercise_11() {
 
 void exercise_12() {
   float result = 1;
+  cout << 1 << "\n";
     float v = 1;
-    for(int i = 0; i <= n; ++i){
+    for(int i = 0; i <= 10; ++i){
         result /= i + 1;
         cout << result << "\n";
         v += result;
     }
-    float answer = n * v;
+    float answer = 10 * v;
     cout << answer << "\n";
 }
 
@@ -220,6 +221,7 @@ long exercise_13(int n, int k) {
 }
 
 string exercise_14(int n) {
+  string sentence = to_string(n);
   int size = sentence.length();
     string original = "";
     string reversed = "";
