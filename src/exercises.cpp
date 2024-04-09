@@ -169,7 +169,7 @@ void exercise_9(string s) {
         for(char c : s){
             ++result;
             if(c == 'f'){
-                cout << result;
+                cout << result << "\n";
                 break;
             }
         }
@@ -238,9 +238,9 @@ string exercise_14(int n) {
             char o = original[i];
             char r = reversed[i];
             if( o != r){
-                return "NO\n";
+                return "No es palindrome";
             }else{
-                return "YES\n";
+                return "Es palindrome";
             }
         }
     }else{
@@ -254,7 +254,7 @@ void exercise_15(int decimal) {
         r = (decimal%2==0 ?"0":"1")+r; 
         decimal/=2;
     }
-    cout << r;
+    cout << r << "\n";
 }
 
 void exercise_16(int divident, int divider) {
