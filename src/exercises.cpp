@@ -124,6 +124,7 @@ void exercise_7(int n) {
 }
 
 void exercise_8(string s) {
+    bool palindrome = true;
   int size = s.length();
     string original = "";
     string reversed = "";
@@ -140,10 +141,13 @@ void exercise_8(string s) {
             char o = original[i];
             char r = reversed[i];
             if( o != r){
-                cout << "NO\n";
-            }else{
-                cout << "YES\n";
+                palindrome = false;
             }
+        }
+        if(palindrome == false){
+            cout << "NO\n";
+        }else {
+            cout << "YES\n";
         }
     }else{
         cout << "Se supero la cantidad de caracteres permitidos la cual es 100";
