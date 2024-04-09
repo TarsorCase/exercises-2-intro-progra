@@ -190,8 +190,9 @@ int exercise_10(int a, int b) {
 }
 
 void exercise_11() {
-  float result = 1; 
-    for(int i = n; i <= 10; ++i){
+    float result = 1;
+    cout << 1 << "\n";
+    for(int i = 0; i < 10; ++i){
         result /= i + 1;
         cout << result << "\n";
     }
