@@ -254,14 +254,17 @@ string exercise_14(int n) {
 }
 
 void exercise_15(int decimal) {
-  string r;
-    while(decimal!=0){
-        r = (decimal%2==0 ?"0":"1")+r; 
-        decimal/=2;
+    if(decimal != 0){
+        string r;
+        while(decimal!=0){
+            r = (decimal%2==0 ?"0":"1")+r; 
+            decimal/=2;
+        }
+        cout << r << "\n";
+    }else{
+        cout << decimal << "\n";
     }
-    cout << r << "\n";
 }
-
 void exercise_16(int divident, int divider) {
 }  
 void exercise_17(int n) {
