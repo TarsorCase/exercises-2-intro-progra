@@ -137,7 +137,7 @@ void exercise_8(string s) {
         for(int i = original.length() - 1; i >= 0; --i){
             reversed += original[i];
         }
-        for(int i = 0; i <= size - 1; ++i){
+        for(int i = 0; i <= original.length() - 1; ++i){
             char o = original[i];
             char r = reversed[i];
             if( o != r){
