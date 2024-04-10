@@ -197,10 +197,10 @@ int exercise_10(int a, int b) {
 
 void exercise_11() {
     float result = 1;
-    cout << 1 << "\n";
-    for(int i = 0; i < 10; ++i){
-        result /= i + 1;
-        cout << result << "\n";
+    cout << "U0 = " << result << "\n";
+    for(int i = 1; i <= 10; ++i){
+        result /= i;
+        cout << "U" << i << " = " << result << "\n";
     }
 }
 
