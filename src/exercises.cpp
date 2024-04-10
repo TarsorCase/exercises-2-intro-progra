@@ -265,10 +265,36 @@ void exercise_15(int decimal) {
     }
 }
 void exercise_16(int divident, int divider) {
-    
+    int cociente;
+    do{
+        ++cociente; 
+        divident -= divider;
+    }while(divident >= divider);
+
+    cout << cociente << ' ';
+    cout << divident;
 }  
 void exercise_17(int n) {
-  // TODO: YOUR CODE HERE
+  int contador = 0;
+    int num = 2;
+    while (contador < n) {
+        bool primo = true; // Reset primo for each number
+        if (num <= 1) {
+            primo = false;
+        } else {
+            for (int i = 2; i <= sqrt(num); ++i) {
+                if (num % i == 0) {
+                    primo = false;
+                    break; // Exit loop once a divisor is found
+                }
+            }
+        }
+        if (primo) {
+            cout << num << " ";
+            contador++;
+        }
+        num++;
+    }
 }
 
 void exercise_18_19(int debut, int fin) {
