@@ -304,7 +304,7 @@ void exercise_18_19(int debut, int fin) {
         if(fin > debut){
             for(int i = debut; i <= fin; ++i){
                 int num = i;
-                cout << ' ' << i << " -> ";
+                cout << i << "->";
                 counter = 0;
                 while(num != 0){
                     if(num % 3 == 0){
