@@ -91,7 +91,7 @@ void exercise_5(int n, int k) {
         if ((n + day - 1) % 7 == 0 || day == k) {
             if (day < 10)
                 cout << " "; 
-            cout << day << endl;
+            cout << day << " \n";
         } else {
             if (day < 10)
                 cout << " "; 
