@@ -299,5 +299,29 @@ void exercise_17(int n) {
 }
 
 void exercise_18_19(int debut, int fin) {
-  // TODO: YOUR CODE HERE
+  int counter = 0;
+    if(debut > 0){
+        if(fin > debut){
+            for(int i = debut; i <= fin; ++i){
+                int num = i;
+                cout << ' ' << i << " -> ";
+                counter = 0;
+                while(num != 0){
+                    if(num % 3 == 0){
+                        num = num + 4;
+                    }else if(num % 4 == 0){
+                        num = num / 2;
+                    }else{
+                        num = num - 1;
+                    }
+                    ++counter;
+                }
+                cout << counter;
+            }
+        }else{
+            cout << "El numero de fin no debe de ser menor al inicial";
+        } 
+    }else{
+        cout << "El numero debe de ser positivo y mayor a zero";
+    }    
 }
