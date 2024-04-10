@@ -316,7 +316,7 @@ void exercise_18_19(int debut, int fin) {
                     }
                     ++counter;
                 }
-                cout << counter;
+                cout << counter << "\n";
             }
         }else{
             cout << "El numero de fin no debe de ser menor al inicial";
