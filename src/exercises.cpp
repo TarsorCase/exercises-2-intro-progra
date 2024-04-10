@@ -210,7 +210,7 @@ void exercise_12() {
     for(int i = 1; i <= 10; ++i){
         result /= i;
         v += result;
-        cout << "U" << i << " = " << result << 'V' << i << " = 1" <<"\n";
+        cout << "U" << i << " = " << result << " V" << i << " = 1" <<"\n";
     }
 }
 
