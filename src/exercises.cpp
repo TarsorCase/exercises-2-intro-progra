@@ -319,9 +319,9 @@ void exercise_18_19(int debut, int fin) {
                 cout << counter << "\n";
             }
         }else{
-            cout << "El numero de fin no debe de ser menor al inicial";
+            cout << "El numero de fin no debe de ser menor al inicial\n";
         } 
     }else{
-        cout << "El numero debe de ser positivo y mayor a zero";
+        cout << "El numero debe de ser positivo y mayor a zero\n";
     }    
 }
