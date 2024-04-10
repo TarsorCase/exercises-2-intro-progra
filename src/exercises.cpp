@@ -83,7 +83,7 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-    for (int i = 0; i < n; i++) {
+    for (int i = 1; i < n; i++) {
         cout << "   "; 
     }
     
