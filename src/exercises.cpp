@@ -301,7 +301,7 @@ void exercise_17(int n) {
 void exercise_18_19(int debut, int fin) {
   int counter = 0;
     if(debut > 0){
-        if(fin > debut){
+        if(fin >= debut){
             for(int i = debut; i <= fin; ++i){
                 int num = i;
                 cout << i << "->";
