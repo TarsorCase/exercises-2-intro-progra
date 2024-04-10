@@ -206,15 +206,12 @@ void exercise_11() {
 
 void exercise_12() {
   float result = 1;
-  cout << 1 << "\n";
-    float v = 1;
-    for(int i = 0; i <= 10; ++i){
-        result /= i + 1;
-        cout << result << "\n";
+  float v = 1;
+    for(int i = 1; i <= 10; ++i){
+        result /= i;
         v += result;
+        cout << "U" << i << " = " << result << 'V' << i << " = 1" <<"\n";
     }
-    float answer = 10 * v;
-    cout << answer << "\n";
 }
 
 long exercise_13(int n, int k) {
