@@ -265,13 +265,15 @@ void exercise_15(int decimal) {
     }
 }
 void exercise_16(int divident, int divider) {
-    int cociente = 0;
-    while (divident >= divider && divider != 0) {
-        ++cociente;
-        divident -= divider;
-    }
+    if (divider != 0) {
+        int cociente = 0;
+        while (divident >= divider) {
+            ++cociente;
+            divident -= divider;
+        }
 
-    cout << cociente << ' ' << divident << endl;
+        cout << cociente << ' ' << divident << endl;
+    }
 }  
 void exercise_17(int n) {
   int contador = 0;
